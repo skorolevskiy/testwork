@@ -2,3 +2,101 @@
 @import 'global/mixins';
 @import 'global/variables';
 @import 'global/fonts';
+
+@import 'node_modules/foundation-sites/scss/foundation';
+
+// Global styles
+@include foundation-global-styles;
+@include foundation-typography;
+
+
+.week {
+  &__days {
+    padding: 3em 1em;
+  }
+
+  &__day {
+    display: flex;
+    width: 100%;
+    max-width: 200px;
+    height: 100px;
+    margin: 0 auto 10px;
+
+    border: 1px solid grey;
+    border-radius: 5px;
+
+    will-change: unset;
+    user-select: none;
+    cursor: pointer;
+
+    transition: .5s ease-in;
+
+    &:hover {
+      animation: hover-card .5s ease-in-out infinite;
+    }
+
+    &:active {
+      border: 2px solid red;
+      color: red;
+      background-color: white;
+
+      animation-play-state: paused;
+    }
+
+    &.selected {
+      background-color: blue;
+    }
+
+    &--mon {
+      background-color: lighten(green, 70);
+    }
+
+    &--tue {
+      background-color: lighten(green, 60);
+    }
+
+    &--wed {
+      background-color: lighten(green, 50);
+    }
+
+    &--thu {
+      background-color: lighten(green, 40);
+    }
+
+    &--fri {
+      background-color: lighten(green, 30);
+    }
+
+    &--sat {
+      background-color: lighten(green, 20);
+    }
+
+    &--sun {
+      background-color: lighten(green, 10);
+    }
+
+    span {
+      margin: auto;
+      font-weight: bold;
+    }
+
+  }
+}
+
+
+@keyframes hover-card {
+  0% {
+    box-shadow: 0 0px 0px rgba(0,0,0,.3);
+    transform: scale(1);
+  }
+
+  50% {
+    box-shadow: 0 5px 30px rgba(0,0,0,.3);
+    transform: scale(1.05);
+  }
+
+  100% {
+    box-shadow: 0 0px 0px rgba(0,0,0,.3);
+    transform: scale(1);
+  }
+}

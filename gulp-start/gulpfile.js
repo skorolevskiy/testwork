@@ -138,7 +138,9 @@ gulp.task("css", function () {
     .pipe(sourcemap.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer(),
+      autoprefixer({
+        browsers: ['last 2 versions', 'ie >= 9', 'android >= 4.4', 'ios >= 7']
+      }),
     ]))
     .pipe(csso())
     .pipe(rename("style.min.css"))

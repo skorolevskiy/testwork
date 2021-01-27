@@ -1,6 +1,6 @@
 {% extends "layout.njk" %}
 
-{% block title %}Главная | Элекс{% endblock %}
+{% block title %}Тестовое задание{% endblock %}
 
 {% block head %}
   {{ super() }}
@@ -19,5 +19,19 @@
 {% endblock %}
 
 {% block content %}
+  <section class="week__days">
+      {% set items = [{ title: "ПН", class: "mon" }, { title: "ВТ", class: "tue"}, { title: "СР", class: "wed"}, { title: "ЧТ", class: "thu"}, { title: "ПТ", class: "fri"}, { title: "СБ", class: "sat"}, { title: "ВС", class: "sun"}] %}
+      {% for item in items %}
+          <div class="week__day week__day--{{ item.class }}" draggable="true">
+            <span>{{ item.title }}</span>
+          </div>
+      {% endfor %}
+  </section>
+
+  <menu type="context" id="share">
+      {% for item in items %}
+        <menuitem label="{{ item.title }}"></menuitem>
+      {% endfor %}
+  </menu>
 
 {% endblock %}

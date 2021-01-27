@@ -1,0 +1,46 @@
+{
+  "name": "istra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build --production",
+    "start": "gulp start"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "autoprefixer": "9.5.x",
+    "babel-loader": "^8.1.0",
+    "browser-sync": "2.26.x",
+    "del": "^5.1.0",
+    "gulp": "4.0.x",
+    "gulp-cheerio": "^1.0.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "8.0.x",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "4.0.x",
+    "gulp-sourcemaps": "2.6.x",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgmin": "^3.0.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-webp": "^4.0.1",
+    "readable-stream": "^3.6.0",
+    "webpack": "^4.44.1",
+    "webpack-stream": "^6.0.0",
+    "yargs": "^15.4.1"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "jquery": "^3.5.1",
+    "regenerator-runtime": "^0.13.7"
+  }
+}

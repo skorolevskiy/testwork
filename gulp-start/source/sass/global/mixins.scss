@@ -1,0 +1,97 @@
+@import 'variables';
+@import 'fonts';
+
+@mixin button-text {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: $fontWhite;
+}
+
+@mixin h2 {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+@mixin logo {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+@mixin card-title {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+@mixin card-price {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+@mixin menu-title {
+  font-family: $title-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 128px;
+  line-height: 188px;
+}
+
+@mixin menu-social {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin p1 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+@mixin p2 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@mixin p3 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@mixin p4 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin tag {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+@mixin p5 {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+}
